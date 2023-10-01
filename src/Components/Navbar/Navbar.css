@@ -2,7 +2,7 @@
 .navbar {
     box-sizing: border-box;
     display: flex;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     background: transparent; /* Make the background transparent */
     padding: 20px;
@@ -10,7 +10,7 @@
     top: 0;
     left: 0;
     z-index: 100;
-    width: 100vw;
+    width: 100%; 
 }
 /* .navbar :active{
     
@@ -65,7 +65,11 @@
     border: 1px solid #029BFB;
   }
   /* Media query for responsive menu */
-  @media (max-width: 768px) {
+  @media (max-width: 1050px) {
+    .button button {
+      display:none;
+    }
+
     .links {
       flex-direction: column;
       position: absolute;
