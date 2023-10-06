@@ -1,0 +1,9 @@
+.wrapper{
+    width: 100vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.531);
+}
+.wrapper img{
+    width: 90%;
+    border-radius: 48px;
+}

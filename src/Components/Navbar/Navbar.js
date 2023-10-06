@@ -76,7 +76,7 @@ const Navbar = () => {
     >
       <div className="LogoLinks">
         <div className="logo">
-          <img src='https://artyfact.game/wa-data/public/site/themes/artyfact/logo/logo_small.png?v=2' alt="Logo" />
+          <img src={require('../../Sources/cicca.png')} alt="Logo" />
         </div>
         <div className={`links ${isMenuOpen ? "open" : ""}`}>
           {Array.isArray(headings) &&

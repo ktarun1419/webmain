@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .stage {
+            position: relative;
+            background: #000000;
+            width: 800px;
+            height: 500px;
+        }
+
+        .bouncer-holder {
+            position: absolute;
+            left: 0;
+            top: 0;
+            height: 100%;
+            -webkit-animation: travel 3s ease-in infinite alternate;
+            -o-animation: travel 3s ease-in infinite alternate;
+            animation: travel 3s ease-in infinite alternate;
+        }
+        .bouncer-holder1{
+            position: absolute;
+            left: 10%;
+            top: 0;
+            height: 100%;
+            -webkit-animation: travel 5s ease-in infinite alternate;
+            -o-animation: travel 5s ease-in infinite alternate;
+            animation: travel 5s ease-in infinite alternate;
+        }
+        
+        .bouncer {
+            position: absolute;
+            bottom: 0;
+            border-radius: 50%;
+            height: fit-content;
+            width: fit-content;
+            padding: 8px;
+            background-color: blueviolet;
+            border-radius: 10px;
+            font-size: 18px;
+            -webkit-animation: bounce 3.5s infinite;
+            -o-animation: bounce 3.5s infinite;
+            animation: bounce 3.5s infinite;
+        }
+
+        @-webkit-keyframes travel {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: calc(60%)
+            }
+        }
+
+        @keyframes travel {
+            from {
+                left: 0;
+            }
+
+            to {
+                left: calc(60%)
+            }
+        }
+
+        @-webkit-keyframes bounce {
+
+            from,
+            to {
+                bottom: 0;
+                -webkit-animation-timing-function: ease-out;
+            }
+
+            50% {
+                bottom: 220px;
+                -webkit-animation-timing-function: ease-in;
+            }
+        }
+
+        @keyframes bounce {
+
+            from,
+            to {
+                bottom: 0;
+                animation-timing-function: ease-out;
+            }
+
+            50% {
+                bottom: calc(100% - 30px);
+                animation-timing-function: ease-in;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="stage">
+        <div class="bouncer-holder"  style="animation-duration: 3s;">
+            <div class="bouncer" style="background-color: rgb(255, 176, 151);animation-duration: 3s;">NFTs</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 4s;">
+            <div class="bouncer"  style="background-color:rgb(255, 245, 151);animation-duration: 4s;">Blockchain</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 5s;">
+            <div class="bouncer" style="background-color:rgb(197, 151, 255);animation-duration: 5s;">Metaverse</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 6s;">
+            <div class="bouncer" style="background-color: rgb(151, 224, 255);animation-duration: 6s;">Web3</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 7s;">
+            <div class="bouncer" style="background-color:rgb(197, 151, 255);animation-duration: 7s;">Defi</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 8s;">
+            <div class="bouncer" style="background-color: rgb(255, 176, 151);animation-duration: 8s;">Crypto</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 9s;">
+            <div class="bouncer" style="background-color: rgb(151, 224, 255);animation-duration: 4s;">Community</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 10s;">
+            <div class="bouncer" style="background-color:rgb(255, 245, 151);animation-duration: 3s;">Fiat</div>
+        </div>
+        <div class="bouncer-holder" style="animation-duration: 11s;">
+            <div class="bouncer" style="background-color:rgb(197, 151, 255);animation-duration: 5s;">#EGLD</div>
+        </div>
+    </div>
+</body>
+
+</html>

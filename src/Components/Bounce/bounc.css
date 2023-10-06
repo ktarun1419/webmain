@@ -1,0 +1,89 @@
+.stage {
+    position: relative;
+    background: #0000002f;
+    width: 100vw;
+    height: 300px;
+}
+
+.bouncer-holder {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    -webkit-animation: travel 3s ease-in infinite alternate;
+    -o-animation: travel 3s ease-in infinite alternate;
+    animation: travel 3s ease-in infinite alternate;
+}
+.bouncer-holder1{
+    position: absolute;
+    left: 10%;
+    top: 0;
+    height: 100%;
+    -webkit-animation: travel 5s ease-in  alternate;
+    -o-animation: travel 5s ease-in  alternate;
+    animation: travel 5s ease-in  alternate;
+}
+
+.bouncer {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    height: fit-content;
+    width: fit-content;
+    padding: 8px;
+    background-color: blueviolet;
+    border-radius: 10px;
+    font-size: 18px;
+    color: black;
+    -webkit-animation: bounce 3.5s infinite;
+    -o-animation: bounce 3.5s infinite;
+    animation: bounce 3.5s infinite;
+}
+
+@-webkit-keyframes travel {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(90%)
+    }
+}
+
+@keyframes travel {
+    from {
+        left: 0;
+    }
+
+    to {
+        left: calc(95%)
+    }
+}
+
+@-webkit-keyframes bounce {
+
+    from,
+    to {
+        bottom: 0;
+        -webkit-animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: 220px;
+        -webkit-animation-timing-function: ease-in;
+    }
+}
+
+@keyframes bounce {
+
+    from,
+    to {
+        bottom: 0;
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        bottom: calc(100% - 30px);
+        animation-timing-function: ease-in;
+    }
+}

@@ -8,16 +8,19 @@ import Feature from '../Features/Feature';
 import Games from '../Games/Games';
 import NFT from '../NFT/NFT';
 import RoadMap from '../RoadMap/RoadMap';
+import Bounce from '../Bounce/Bounce';
+import Timeline from '../Timeline/Timeline';
+// import Bounce from '../Bounce';
 
 const Home = () => {
   return (
     <>
         <div className='Scroll-container'>
             <div className='flex-container'>
-                <img className='logo-img' src='https://artyfact.game/wa-data/public/site/themes/artyfact/logo/logo2.gif'/>
-                <h1>CICCADEFI</h1>
+                <img className='logo-img' src={require('../../Sources/cicca.png')}/>
+                <h1>Cicca Defi</h1>
                 <h2>The Future of Gaming</h2>
-                <h3>Defi Web3Game, staking dApp, #Nft Minting AI chat, #Metaverse & more! Swap, stake, play-to-earn, & dive into new realms.</h3>
+                {/* <h3>Defi Web3Game, staking dApp, #Nft Minting AI chat, #Metaverse & more! Swap, stake, play-to-earn, & dive into new realms.</h3> */}
                 <div className='icondiv'>
                     {
                         socialIcons.map((el) => {
@@ -25,6 +28,7 @@ const Home = () => {
                         })
                     }
                 </div>
+                    <Bounce />
                 <div className='button-bar'>
                     <button className='button1'>WHITEPAPER</button>
                     <button className='button2'>LAUNCHPAD</button>
@@ -43,18 +47,20 @@ const Home = () => {
                     <img data-cfsrc="/wa-data/public/site/themes/artyfact/logo/certik.png" class="img-fluid" src="https://artyfact.game/wa-data/public/site/themes/artyfact/logo/certik.png"/>
                 </div>
                 <div className='powered_h1'>
-                    TEST ARTYFACT
+                    TEST CICCA
                 </div>
                 <div className='powered-bar'>
-                    <button className='btn button1'>ARTYFACT DEMO</button>
+                    <button className='btn button1'>CICCA DEMO</button>
                 </div>
             </div>
-            <TokenBlock/>
-            <About/>
+            {/* <TokenBlock/> */}
+            {/* <About/> */}
+            {/* <Bounce /> */}
             <Feature/>
             <Games/>
             <NFT/>
-            <RoadMap/>
+            <Timeline />
+            {/* <RoadMap/> */}
         </div>
     </>
   )

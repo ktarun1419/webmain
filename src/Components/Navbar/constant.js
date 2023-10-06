@@ -1,17 +1,20 @@
 export const headings=[
     {
-        heading:'Developer'
+        heading:'Features'
     },
     {
-        heading:'Individuals'
+        heading:'Games'
     },
     {
-        heading:'Institution'
+        heading:'Staking'
     },
     {
-        heading:'Ecosystem'
+        heading:'Wallet'
     },
     {
-        heading:'About'
+        heading:'NFT'
+    },
+    {
+        heading:'Buy CICCA'
     },
 ]

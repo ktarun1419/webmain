@@ -43,7 +43,7 @@ const RoadMap = () => {
         <>
             <div className='container-7'>
                 <h1>ROADMAP</h1>
-                <h2>BECOME A PART OF ARTYFACT COMMUNITY</h2>
+                <h2>BECOME A PART OF CICCA COMMUNITY</h2>
                 {true && <swiper-container
                 
                 >
