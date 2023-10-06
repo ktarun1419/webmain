@@ -15,6 +15,7 @@
   left: 0;
   object-fit: cover;
   z-index: 1;
+  filter: brightness(80%);
 }
 
 .App-logo {
