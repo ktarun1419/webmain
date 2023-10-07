@@ -7,7 +7,7 @@ import Home from './Components/Home/Home';
 function App() {
   return (
     <div className="App">
-      <video autoPlay loop muted className="video_player">
+      <video autoPlay loop muted playsInline className="video_player">
         <source src={video} type="video/mp4"></source>
       </video>
       <Navbar/>
