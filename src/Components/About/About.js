@@ -12,13 +12,13 @@ const About = () => {
                     return <iframe title="Artyfact Gameplay Trailer | Metaverse game" src={el} allowfullscreen="" allow="autoplay;" __idm_id__="20520962">
                     </iframe>
                 })}
-                <div className='aboutfooter'>
+                {/* <div className='aboutfooter'>
                     Artyfact is the next generation Gaming Metaverse with integrated
                     innovative GameFi experiences. Artyfact users are able to play AAA
                     GameFi games and earn $ARTY, buy and trade game assets as NFTs, as
                     well as attend virtual events such as concerts, NFT exhibitions,
                     runway shows and eSport tournaments.
-                </div>
+                </div> */}
             </div>
         </>
     )

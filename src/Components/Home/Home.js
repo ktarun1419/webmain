@@ -24,7 +24,7 @@ const Home = () => {
                 <div className='icondiv'>
                     {
                         socialIcons.map((el) => {
-                            return <a className='svg_icons'><SVG src={el?.src} /></a> 
+                            return <a className='svg_icons' href={el?.link}><SVG src={el?.src} /></a> 
                         })
                     }
                 </div>
@@ -54,7 +54,7 @@ const Home = () => {
                 </div>
             </div>
             {/* <TokenBlock/> */}
-            {/* <About/> */}
+            <About/>
             {/* <Bounce /> */}
             {/* <Feature/> */}
             {/* <Games/> */}
