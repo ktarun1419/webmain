@@ -28,8 +28,8 @@
 .container-3 iframe {
     display: block;
     margin: 60px auto;
-    width: 90%;
-    height:900px;
+    width: 60%;
+    height:500px;
     border-radius: 20px;
 }
 
@@ -48,7 +48,7 @@
 @media (max-width : 768px) {
     .container-3 iframe {
         height: 300px;
-        width : 80% ;
+        width : 90% ;
     }
     .aboutfooter {
         font-weight:normal;
