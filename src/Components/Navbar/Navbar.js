@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import { headings } from "./constant";
 import $ from "jquery";
-const Navbar = () => {
+import { toast } from "react-toastify";
+const Navbar = ({openModel,setOpenModel}) => {
   const [activeNavbar, setActiveNavbar] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const toggleMenu = () => {
@@ -67,6 +68,19 @@ const Navbar = () => {
   useEffect(() => {
     window.addEventListener("scroll", changeBackround);
   }, []);
+  const handleClick=(link)=>{
+    if (link==='soon') {
+     toast.success("Coming soon...")
+    }else if (link==='nft'){
+      document.getElementById("nft_section").scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" })
+    }
+    else{
+      const a = document.createElement('a');
+      a.href = link;
+      a.target = '_blank';  // Optional: Set the target attribute to open in a new tab/window
+      a.click();
+    }
+  }
   return (
     <nav
       onScrollCapture={changeBackround}
@@ -81,7 +95,7 @@ const Navbar = () => {
         <div className={`links ${isMenuOpen ? "open" : ""}`}>
           {Array.isArray(headings) &&
             headings.length > 0 &&
-            headings.map((item) => <a className="shuffle links-click" href="/">{item?.heading}</a>)}
+            headings.map((item) => <a className="shuffle links-click" onClick={()=>handleClick(item?.link)} >{item?.heading}</a>)}
         </div>
       </div>
       <div className="button">

@@ -5,7 +5,7 @@ import { nfts, nfts2 } from './constant'
 const NFT = () => {
   return (
     <>
-        <div className="container-6">
+        <div className="container-6" id='nft_section'>
             <h1>NFTS</h1>
             <h2>TRULY OWN YOUR GAMING ASSETSs</h2>
             <div className='nftRow'>

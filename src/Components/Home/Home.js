@@ -7,7 +7,7 @@ import About from '../About/About';
 import Feature from '../Features/Feature';
 import Games from '../Games/Games';
 import NFT from '../NFT/NFT';
-import RoadMap from '../RoadMap/RoadMap';
+
 import Bounce from '../Bounce/Bounce';
 import Timeline from '../Timeline/Timeline';
 // import Bounce from '../Bounce';
@@ -33,19 +33,19 @@ const Home = () => {
                     <button className='button1'>WHITEPAPER</button>
                     <button className='button2'>LAUNCHPAD</button>
                 </div>
-                <div className='powered_h1'>
+                {/* <div className='powered_h1'>
                     POWERED BY
                 </div>
                 <div className='powered-bar'>
                     <img src="https://artyfact.game/wa-data/public/site/themes/artyfact/logo/unreal4.png" width="85px" class="img-fluid"/>
                     <img src="https://artyfact.game/wa-data/public/site/themes/artyfact/logo/binance.png" width="85px" class="img-fluid"/>
-                </div>
-                <div className='powered_h1'>
+                </div> */}
+                {/* <div className='powered_h1'>
                     SECURITY AUDIT BY
                 </div>
                 <div className='powered-bar'>
                     <img data-cfsrc="/wa-data/public/site/themes/artyfact/logo/certik.png" class="img-fluid" src="https://artyfact.game/wa-data/public/site/themes/artyfact/logo/certik.png"/>
-                </div>
+                </div> */}
                 <div className='powered_h1'>
                     TEST CICCA
                 </div>
@@ -56,8 +56,8 @@ const Home = () => {
             {/* <TokenBlock/> */}
             {/* <About/> */}
             {/* <Bounce /> */}
-            <Feature/>
-            <Games/>
+            {/* <Feature/> */}
+            {/* <Games/> */}
             <NFT/>
             <Timeline />
             {/* <RoadMap/> */}

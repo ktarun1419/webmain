@@ -1,20 +1,26 @@
 export const headings=[
     {
-        heading:'Features'
+        heading:'Features',
+        link:'',
     },
     {
-        heading:'Games'
+        heading:'Games',
+        link:'',
     },
     {
-        heading:'Staking'
+        heading:'Staking',
+        link:'soon',
     },
     {
-        heading:'Wallet'
+        heading:'Wallet',
+        link:'soon',
     },
     {
-        heading:'NFT'
+        heading:'NFT',
+        link:'nft',
     },
     {
-        heading:'Buy CICCA'
+        heading:'Buy CICCA',
+        link:'https://sale.cicca.io/',
     },
 ]

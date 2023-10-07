@@ -39,6 +39,7 @@
   .links a {
     text-decoration: none;
     margin: 0px 15px;
+    cursor: pointer;
     color: white; /* Link text color */
   }
   
