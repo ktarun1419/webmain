@@ -3,6 +3,8 @@ import "./Navbar.css";
 import { headings } from "./constant";
 import $ from "jquery";
 import { toast } from "react-toastify";
+import SVG from "react-inlinesvg";
+import { socialIcons } from "../Home/constant";
 const Navbar = ({openModel,setOpenModel}) => {
   const [activeNavbar, setActiveNavbar] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -99,8 +101,15 @@ const Navbar = ({openModel,setOpenModel}) => {
         </div>
       </div>
       <div className="button">
-                    <button className='button1'>WHITEPAPER</button>
-                    <button className='button2'>LAUNCHPAD</button>
+                    <button className='button1nav'>WHITEPAPER</button>
+                    <button className='button2nav'>ROADMAP</button>
+                    <div className='icondiv'>
+                    {
+                        socialIcons.map((el) => {
+                            return <a className='svg_icons' href={el?.link}><SVG src={el?.src} /></a> 
+                        })
+                    }
+                </div>
                 </div>
 
       <div className="menu-icon" onClick={toggleMenu}>

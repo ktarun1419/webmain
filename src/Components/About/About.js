@@ -6,8 +6,8 @@ const About = () => {
     return (
         <>
             <div className='container-3'>
-                <h1>ABOUT CICCA</h1>
-                <h2>WELCOME TO THE REVOLUTION IN GAME</h2>
+                {/* <h1>ABOUT CICCA</h1>
+                <h2>WELCOME TO THE REVOLUTION IN GAME</h2> */}
                 {links.map((el) => {
                     return <iframe title="Cicca Gameplay Trailer | Metaverse game" src={el} allowfullscreen="" allow="autoplay;" __idm_id__="20520962">
                     </iframe>

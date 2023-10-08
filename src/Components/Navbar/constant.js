@@ -1,8 +1,8 @@
 export const headings=[
-    {
-        heading:'Features',
-        link:'',
-    },
+    // {
+    //     heading:'Features',
+    //     link:'',
+    // },
     {
         heading:'Games',
         link:'',

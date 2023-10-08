@@ -16,22 +16,7 @@
     width : 160px;
 }
 
-.icondiv {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap:15px;
-}
 
-.svg_icons {
-    color: #fff;
-    text-decoration: none;
-    transition: all ease 0.3s;
-    margin-right: 3px;
-    margin-left: 3px;
-    padding: 3px;
-    display: inline-block;
-}
 
 .flex-container h1 {
     font-size: 70px;

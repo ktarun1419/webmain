@@ -17,17 +17,11 @@ const Home = () => {
     <>
         <div className='Scroll-container'>
             <div className='flex-container'>
-                <img className='logo-img' src={require('../../Sources/cicca.png')}/>
-                <h1>Cicca Defi</h1>
-                <h2>The Future of Gaming</h2>
-                {/* <h3>Defi Web3Game, staking dApp, #Nft Minting AI chat, #Metaverse & more! Swap, stake, play-to-earn, & dive into new realms.</h3> */}
-                <div className='icondiv'>
-                    {
-                        socialIcons.map((el) => {
-                            return <a className='svg_icons' href={el?.link}><SVG src={el?.src} /></a> 
-                        })
-                    }
-                </div>
+                {/* <img className='logo-img' src={require('../../Sources/cicca.png')}/> */}
+                {/* <h1>Cicca Defi</h1>
+                <h2>The Future of Gaming</h2> */}
+                <h3>Defi Web3Game, staking dApp, #Nft Minting AI chat, </h3> <h3> #Metaverse & more! Swap, stake, play-to-earn, & dive into new realms.</h3>
+                
                     <Bounce />
                 <div className='button-bar'>
                     <button className='button1'>WHITEPAPER</button>
@@ -46,9 +40,9 @@ const Home = () => {
                 <div className='powered-bar'>
                     <img data-cfsrc="/wa-data/public/site/themes/artyfact/logo/certik.png" class="img-fluid" src="https://artyfact.game/wa-data/public/site/themes/artyfact/logo/certik.png"/>
                 </div> */}
-                <div className='powered_h1'>
+                {/* <div className='powered_h1'>
                     TEST CICCA
-                </div>
+                </div> */}
                 <div className='powered-bar'>
                     <button className='btn button1'>CICCA DEMO</button>
                 </div>
