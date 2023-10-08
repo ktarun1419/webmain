@@ -10,6 +10,7 @@ import NFT from '../NFT/NFT';
 
 import Bounce from '../Bounce/Bounce';
 import Timeline from '../Timeline/Timeline';
+import Footer from '../Footer/Footer';
 // import Bounce from '../Bounce';
 
 const Home = () => {
@@ -55,6 +56,7 @@ const Home = () => {
             <NFT/>
             <Timeline />
             {/* <RoadMap/> */}
+            <Footer/>
         </div>
     </>
   )
